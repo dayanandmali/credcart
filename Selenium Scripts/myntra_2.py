@@ -37,7 +37,7 @@ try:
     # Find the search bar and enter "shirt"
     search_bar = driver.find_element(By.CSS_SELECTOR,"input[placeholder='Search for products, brands and more']")
     search_bar.send_keys("shirt")
-    search_bar.send_keys(Keys.RETURN)
+    search_bar.send_keys(Keys.RETURN)  ## it will press the enter button
 
     # Wait for the search results to load
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".product-base")))
